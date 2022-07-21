@@ -62,3 +62,7 @@ MainSection:NewToggle("Bypass Fly", "Fly Mode", function(state)
             
     end
 end)
+
+Section:NewButton("Reset", "Reset", function()
+    print("Clicked")
+end)
