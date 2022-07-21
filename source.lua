@@ -23,8 +23,12 @@ local Tab = Window:NewTab("UI")
 local UIStuffSection = Tab:NewSection("UIStuff")
 
 --Setting
-local Tab = Window:NewTab("Setting")
+local Tab = Window:NewTab("🛠️Setting")
 local SettingSection = Tab:NewSection("Setting Stuff")
+
+--Pro-SynaFE-UI-Hub
+local Tab = Window:NewTab("🥏ProSynaFEUIHub")
+local SettingSection = Tab:NewSection("Buy with Robux [Coming soon]")
 
 
 MainSection:NewToggle("First Person/Third Person Mode", "exit First Person", function(state)
