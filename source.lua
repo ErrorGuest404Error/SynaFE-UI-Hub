@@ -66,8 +66,7 @@ end)
 MainSection:NewButton("Reset Me", "Respawn Script", function()
         
     script.Parent.MouseButtonClick:Connect(function()
-    game.Players.LocalPlayer.Character.Humanoid
-            
+    game.Players.LocalPlayer.Character.Humanoid = 0     
 end)
 
 MainSection:NewButton("Troll Chat UI", "Lets you chat for other people", function()
