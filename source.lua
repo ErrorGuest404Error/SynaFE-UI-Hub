@@ -63,7 +63,7 @@ MainSection:NewToggle("Bypass Fly", "Fly Mode", function(state)
     end
 end)
 
-MainSection:NewButton("ButtonText", "ButtonInfo", function()
+MainSection:NewButton("Reset Me", "Respawn Script", function()
         
     local localplayer = game.Players.LocalPlayer
 if localplayer.Character:FindFirstChild('HumanoidRootPart') then
