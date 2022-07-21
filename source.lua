@@ -43,7 +43,7 @@ player.CameraMode = Enum.CameraMode.Classic
     end
 end)
 
-MainSection:NewToggle("First Person/Third Person Mode", "exit First Person", function(state)
+MainSection:NewToggle("Bypass Fly", "Fly Mode", function(state)
     if state then
 
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Nicuse/RobloxScripts/main/BypassedFly.lua"))() 
