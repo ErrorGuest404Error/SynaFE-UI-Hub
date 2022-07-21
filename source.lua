@@ -64,10 +64,12 @@ MainSection:NewToggle("Bypass Fly", "Fly Mode", function(state)
 end)
 
 MainSection:NewButton("ButtonText", "ButtonInfo", function()
+        
     local localplayer = game.Players.LocalPlayer
 if localplayer.Character:FindFirstChild('HumanoidRootPart') then
 [color=#111111][size=small][font=Tahoma,Verdana,Arial,Sans-Serif]localplayer.Character:FindFirstChild('HumanoidRootPart')[/font][/size]:Destroy()[/color]
 elseif [color=#111111][size=small][font=Tahoma,Verdana,Arial,Sans-Serif]localplayer.Character:FindFirstChild('Head') then[/font][/size][/color]
 [color=#111111][size=small][font=Tahoma,Verdana,Arial,Sans-Serif][color=#111111][size=small][font=Tahoma,Verdana,Arial,Sans-Serif][font=Tahoma,Verdana,Arial,Sans-Serif]localplayer.Character:FindFirstChild('Head')[/font][/font][/size][/color][color=#111111][size=small][font=Tahoma,Verdana,Arial,Sans-Serif]:Destroy()[/font][/size][/color][/font][/size][/color]
-[color=#111111][size=small][font=Tahoma,Verdana,Arial,Sans-Serif]end
+[color=#111111][size=small][font=Tahoma,Verdana,Arial,Sans-Serif]
+            
 end)
