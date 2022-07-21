@@ -10,9 +10,21 @@ local MainSection = Tab:NewSection("Commands")
 local Tab = Window:NewTab("GamesScripts")
 local GameScriptsSection = Tab:NewSection("Games")
 
---FE-ADMIN-COMMANDS-SCRIPTS
-local Tab = Window:NewTab("FEAdmimCmdsScripts")
-local AdmimCmdsScriptsSection = Tab:NewSection("FeAdminCommandsScripts")
+--FeAdminCmdsScripts
+local Tab = Window:NewTab("FeAdminCmds")
+local FeAdminCmdsScriptsSection = Tab:NewSection("FeAdminCmdsScripts")
+
+--KeybindsCmds
+local Tab = Window:NewTab("KeybindsCmds")
+local KeybindsCmdsSection = Tab:NewSection("Keybinds")
+
+--UIStuff
+local Tab = Window:NewTab("UI")
+local UIStuffSection = Tab:NewSection("UIStuff")
+
+--Setting
+local Tab = Window:NewTab("Setting")
+local SettingSection = Tab:NewSection("Setting Stuff")
 
 
 MainSection:NewToggle("First Person/Third Person Mode", "exit First Person", function(state)
