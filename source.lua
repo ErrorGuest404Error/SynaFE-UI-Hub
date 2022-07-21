@@ -64,24 +64,8 @@ MainSection:NewToggle("Bypass Fly", "Fly Mode", function(state)
 end)
 
 MainSection:NewButton("Reset Me", "Respawn Script", function()   
-   local respawnDelay = 5
- 
-game.Players.CharacterAutoLoads = false
- 
-game.Players.PlayerAdded:Connect(function(player)
-	player.CharacterAdded:Connect(function(character)
-		-- find the humanoid, and detect when it dies
-		local humanoid = character:FindFirstChild("Humanoid")
-		if humanoid then
-			humanoid.Died:Connect(function()
-				wait(respawnDelay)
-				player:LoadCharacter()
-			end)
-		end
-	end)
-	player:LoadCharacter()
-end)
-
+		
+    end)
 MainSection:NewButton("Troll Chat UI", "Lets you chat for other people", function()
         loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
     end)
