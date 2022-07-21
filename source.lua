@@ -65,11 +65,11 @@ end)
 
 MainSection:NewButton("Reset Me", "Respawn Script", function()
         
-    local localplayer = game.Players.LocalPlayer
-if localplayer.Character:FindFirstChild('HumanoidRootPart') then
-[color=#111111][size=small][font=Tahoma,Verdana,Arial,Sans-Serif]localplayer.Character:FindFirstChild('HumanoidRootPart')[/font][/size]:Destroy()[/color]
-elseif [color=#111111][size=small][font=Tahoma,Verdana,Arial,Sans-Serif]localplayer.Character:FindFirstChild('Head') then[/font][/size][/color]
-[color=#111111][size=small][font=Tahoma,Verdana,Arial,Sans-Serif][color=#111111][size=small][font=Tahoma,Verdana,Arial,Sans-Serif][font=Tahoma,Verdana,Arial,Sans-Serif]localplayer.Character:FindFirstChild('Head')[/font][/font][/size][/color][color=#111111][size=small][font=Tahoma,Verdana,Arial,Sans-Serif]:Destroy()[/font][/size][/color][/font][/size][/color]
-[color=#111111][size=small][font=Tahoma,Verdana,Arial,Sans-Serif]
+    script.Parent.MouseButtonClick:Connect(function()
+    game.Players.LocalPlayer.Character.Humanoid
             
 end)
+
+MainSection:NewButton("Troll Chat UI", "Lets you chat for other people", function()
+        loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
+    end)
