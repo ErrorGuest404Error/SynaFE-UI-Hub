@@ -64,5 +64,5 @@ MainSection:NewToggle("Bypass Fly", "Fly Mode", function(state)
 end)
 
 Section:NewButton("Reset", "Reset", function()
-    print("Clicked")
+    game.Players.LocalPlayer.Character.Humanoid.Health = 0
 end)
