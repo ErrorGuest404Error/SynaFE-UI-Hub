@@ -63,10 +63,11 @@ MainSection:NewToggle("Bypass Fly", "Fly Mode", function(state)
     end
 end)
 
-MainSection:NewButton("Reset Me", "Respawn Script", function()
-        
+MainSection:NewButton("Reset Me", "Respawn Script", function()   
     script.Parent.MouseButtonClick:Connect(function()
-    game.Players.LocalPlayer.Character.Humanoid = 0     
+    game.Players.LocalPlayer.Character.Humanoid = 0  
+   
+    end            
 end)
 
 MainSection:NewButton("Troll Chat UI", "Lets you chat for other people", function()
