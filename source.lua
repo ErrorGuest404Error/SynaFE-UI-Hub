@@ -1,6 +1,6 @@
 --Beta-Testing SynaFE-UI Hub
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib(" [SynaFE-UI Hub Make By: ErrorGuest404Error ]", "Synapse")
+local Window = Library.CreateLib("SynaFE-UI Hub", "Synapse")
 
 --MAIN
 local Tab = Window:NewTab("Commands")
