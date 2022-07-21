@@ -63,9 +63,6 @@ MainSection:NewToggle("Bypass Fly", "Fly Mode", function(state)
     end
 end)
 
-MainSection:NewButton("Reset Me", "Respawn Script", function()   
-		
-    end)
 MainSection:NewButton("Troll Chat UI", "Lets you chat for other people", function()
         loadstring(game:HttpGet(('https://pastebin.com/raw/djBfk8Li'),true))()
     end)
