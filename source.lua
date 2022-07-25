@@ -63,6 +63,21 @@ MainSection:NewToggle("Bypass Fly", "Fly Mode", function(state)
     end
 end)
 
-MainSection:NewButton("Reset", "Reset", function()
-    game.Players.LocalPlayer.Character.Humanoid.Health = 0
+MainSection:NewButton("god mode", "Reset", function()
+    local player = game:GetService("Players").LocalPlayer
+local character = player:WaitForChild("Character")
+
+local Tool = script.Parent
+
+Tool.Equipped:Connect(function()
+	if character then
+		local forceField = Instance.new("ForceField")
+		forceField.Visible = false
+		forceField.Parent = character
+	end
+end)
+
+Tool.Unequipped:Connect(function()
+    character.ForceField:Destroy()
+end)
 end)
